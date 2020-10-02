@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es" > 
+
+<head>
+
+    <title>PRÁCTICA 2 - TABLERO DE DIBUJO</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="estilo02.css"> <!-- Archivo css -->
+    <meta http-equiv="content-language" name="language" content="es" /> 
+    <script type="text/javascript" src="ejercicio02.js"></script> <!-- Archivo javascript-->
+
+</head>
+
+
+<body>
+
+<div id="contenido">
+
+<!-- Título de la página -->
+<p id="titulo">TABLERO DE DIBUJO CON JAVASCRIPT</p>
+
+<!-- div usado para implementar en el el tablero de dibujo-->
+<div id="tablerodedibujo"></div>
+
+<table width="500" border="4" id="paleta">
+
+    <!-- define el título de una tabla --> 
+	<caption style=" text-align: center; font-family:cursive; padding-bottom: 5px;" > Haga click en un color para comenzar a pintar </caption>
+
+    <!-- Cada fila de la tabla se indica mediante el tag tr-->
+	<tr>
+        
+        <!-- filas individuales dentro de cada fila, en este caso, los colores -->
+		<td class="color1"> </td>
+  		<td class="color2"> </td>
+  		<td class="color3" > </td>
+  		<td class="color4" > </td>
+  		<td class="color5" > </td>
+  		<td class="color6" > </td>
+  		<td class="color7" > </td>
+  		<td class="color8" > </td>
+  		<td class="color9"> </td>
+  		<td class="color10" > </td>
+
+  	</tr>
+
+  	<tr>
+        <!-- para la unificación horizontal de celdas, utilizaremos el atributo de celda “colspan” -->
+  		<td colspan="10" id="pincel">Estado del pincel</td>
+    </tr>
+
+</table>
+
+
+ </div>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+/* .CSS */
+
+/* ---------------------- ESTILO DEL CONTENIDO ---------------------- */
+
+/* NECESARIO PARA CENTRAR LA PÁGINA */
+
+/* Centramos el contenido de la página y las dimensiones que ocuparán en total. Margin en auto */
+#contenido 
+{
+  position:center;  
+  width:920px;
+  height:870px;
+  margin: auto;
+}
+
+/* TITULO DEL CONTENIDO */
+
+/* Definimos el tamaño, estilo y fuente del título. Además le añadimos un borde con sombra y un color de fondo para enmarcarlo en un rectangulo */
+#titulo
+{
+    background-color:#FFE4C4;
+    border-style:inset;
+    border-width: 5px;
+	border-color: #330099;
+	text-align: center;
+    font-family:monospace;
+    font-size:20px;
+    text-decoration:inherit;
+    font-weight:bold;
+    box-shadow: 10px 10px 8px -5px rgba(50, 42, 36, 0.93);
+}
+
+
+/* ---------------------- ESTILO DEL TABLERO ---------------------- */
+
+/* ESTILO TABLA */
+
+/* Le colocamos un borde alrededor del tablero de color azul y sombreado. Lo situamos mediante margin, padding y float. */
+#miTabla
+{
+    float:left;
+    margin-left:140px;
+    padding:0px;
+    position:relative;
+    border-style:inset;
+    border-width: 5px;
+	border-color: #330099;
+    box-shadow: 10px 10px 8px -5px rgba(50, 42, 36, 0.93);
+}
+
+
+/* ESTILO TR */
+
+/* Usamos clear y float para ubicar las celdas dentro del tablero y evitar el descuadre lo máximo posible */
+#trTabla
+{
+    clear:left;
+    float:left;
+}
+
+
+
+
+/* ---------------------- ESTILO DE LA PALETA ---------------------- */
+
+/* COLORES DE LA PALETA */
+
+/* Color elegido para los 10 necesarios. Dos de ellos serán necesariamente blanco y negro */
+.color1 {
+	background-color: #FF0; /* AMARILLO */
+}
+.color2 {
+	background-color: #0F0; /* VERDE */
+}
+.color3 {
+	background-color: #000; /* NEGRO */
+}
+.color4 {
+	background-color: #F00; /* ROJO */
+}
+.color5 {
+	background-color: #06C; /* AZUL */
+}
+.color6 {
+	background-color: #FFF; /* BLANCO */
+}
+.color7 {
+	background-color: #930; /* MARRON */
+}
+.color8 {
+	background-color: #C0C0C0; /* GRIS */
+}
+.color9 {
+	background-color: #063; /* VERDE OSCURO */
+}
+.color10 {
+	background-color: #39F; /* AZUL CLARO */
+}
+
+
+/* ESTILO DE PALETA */
+
+/* Añadimos un borde con estilo, color y tamaño (incluido sombra). Situamos la paleta mediante top, left y position. El tamaño se definirá con width */
+#paleta
+{
+    width:700px;
+    position:relative;
+    top:20px;
+    left:105px;
+    border-color:#330099 ;
+    border-style:inset;
+    border-width: 8px;
+    box-shadow: 10px 10px 8px -5px rgba(50, 42, 36, 0.93);
+}
+
+
+
+/* ESTILO INTERIOR DE LA PALETA */
+
+/* Tamaño de las celdas interiores de los colores */
+#paleta td
+{
+	width: 35px;
+	height:20px;
+}
+
+
+
+/* ESTILO DEL ESTADO DEL PINCEL */
+
+/* Estilo proporcionado al estado del pincel, definiendo su fuente, tipo de letra, que esté centrado y el color*/
+#pincel
+{
+    background-color:#FFE4C4;
+	text-align: center;
+    font-weight:bold;
+    font-family:"Lucida Console", Monaco, monospace; 
+}
+
+
+
+/* ESTILO DEL BORDE DE SELECCIÓN DE LA PALETA DE COLORES */
+
+/* Definimos el estilo, tamaño y color del borde que marcará el color seleccionado */
+.seleccionado
+{
+    border-style:groove;
+    border-width: 8px;
+	border-color: orange;
+}
